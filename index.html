@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Lokesh Kondrugonti's technology blog — Deep dives into AI and Data Science. Professional insights from JBIET." />
+  <meta name="description" content="Lokesh Kondrugonti's technology blog — Deep dives into AI and Data Science. Professional insights from JBIET student." />
   <title>Lokesh Kondrugonti | Perspectives on AI & Data Science</title>
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -47,22 +47,20 @@
     </div>
   </section>
 
-  <!-- ====== FEATURED ARTCILE ====== -->
+  <!-- ====== FEATURED ARTICLE ====== -->
   <section class="section" id="featured">
     <div class="container">
       <div class="featured-post">
         <div class="featured-visual">
           <div class="featured-visual-box">
-            <div class="ai-visual">
-              <div class="ai-core">🤖</div>
-            </div>
+            <img src="aiverse_project.png" alt="AI Verse Application Screenshot">
           </div>
         </div>
         <div class="featured-content">
-          <div class="section-label">Featured Article</div>
+          <div class="section-label">Featured Project</div>
           <h2 class="featured-title">Building AI Verse: From Idea to Reality</h2>
           <p class="featured-excerpt">
-            A first-person journey documenting the technical and creative hurdles of developing a custom AI-powered chat architecture. Exploring the transition from conceptualization to a fully deployed platform.
+            A comprehensive journey from zero web development knowledge to deploying a fully functional AI-powered chat application. Discover how I tackled UI design, API integration, and the future of student-led AI tools.
           </p>
           <button class="btn btn-secondary" onclick="openModal('aiverse')">Read Full Narrative</button>
         </div>
@@ -79,33 +77,39 @@
       </div>
 
       <div class="blog-grid">
-        <!-- Article 1 -->
+        <!-- Article 1: AI Verse -->
         <article class="blog-card" onclick="openModal('aiverse')">
-          <div class="card-visual">🤖</div>
+          <div class="card-visual">
+            <img src="aiverse_project.png" alt="AI Verse Project">
+          </div>
           <h3 class="card-title">Building AI Verse: A Journey in Development</h3>
-          <p class="card-excerpt">How I started AI Verse to merge web development with AI, facing UI and integration challenges along the way.</p>
+          <p class="card-excerpt">I started AI Verse to learn web development and build a strong portfolio project. I wanted to create my own ChatGPT-like AI assistant.</p>
           <div class="card-footer">
             <span class="author-name">Lokesh K.</span>
             <span class="author-date">June 2026</span>
           </div>
         </article>
 
-        <!-- Article 2 -->
+        <!-- Article 2: Data Science -->
         <article class="blog-card" onclick="openModal('datasci')">
-          <div class="card-visual">📊</div>
+          <div class="card-visual">
+            <span aria-hidden="true">📊</span>
+          </div>
           <h3 class="card-title">The Choice: Why Data Science?</h3>
-          <p class="card-excerpt">Reflecting on the motivations and career goals that led me to the field of Data Science and AI.</p>
+          <p class="card-excerpt">Reflecting on the motivations, career goals, and the fascination with Artificial Intelligence that led me to choose this field.</p>
           <div class="card-footer">
             <span class="author-name">Lokesh K.</span>
             <span class="author-date">June 2026</span>
           </div>
         </article>
 
-        <!-- Article 3 -->
+        <!-- Article 3: GenAI -->
         <article class="blog-card" onclick="openModal('genai')">
-          <div class="card-visual">✨</div>
+          <div class="card-visual">
+            <span aria-hidden="true">✨</span>
+          </div>
           <h3 class="card-title">The Paradigm Shift: Future of GenAI</h3>
-          <p class="card-excerpt">A look into how Generative AI is reshaping industries and creating new frontiers for students.</p>
+          <p class="card-excerpt">How Generative AI is reshaping industries and why it represents an unprecedented opportunity for students in 2026.</p>
           <div class="card-footer">
             <span class="author-name">Lokesh K.</span>
             <span class="author-date">June 2026</span>
@@ -119,13 +123,18 @@
   <section class="section about-section" id="about">
     <div class="container">
       <div class="about-grid">
-        <div class="about-avatar">LK</div>
+        <div class="about-avatar">
+          <img src="profile.jpg" alt="Lokesh Kondrugonti">
+        </div>
         <div class="about-content">
           <div class="section-label">The Author</div>
           <h2 class="about-name">Lokesh Kondrugonti</h2>
           <span class="about-role">Data Science Student · JBIET</span>
           <p class="about-bio">
-            I am a dedicated student at J.B. Institute of Engineering and Technology, specializing in Data Science. My work focuses on bridging the gap between theoretical data models and practical AI applications. Through this blog, I aim to share the technical nuances and personal milestones of my journey in the AI landscape.
+            I am a Data Science student at J.B. Institute of Engineering and Technology, Hyderabad. My passion lies at the intersection of Artificial Intelligence, Machine Learning, and building practical applications that solve real-world problems.
+          </p>
+          <p class="about-bio">
+            Building <strong>AI Verse</strong> was a turning point in my education, teaching me that the best way to understand technology is to create it from scratch. This blog is where I document those lessons.
           </p>
           <a href="#newsletter" class="btn btn-primary">Get in Touch</a>
         </div>
@@ -138,7 +147,7 @@
     <div class="container" style="text-align: center; max-width: 600px;">
       <div class="section-label">Newsletter</div>
       <h2 class="section-title" style="margin-bottom: 24px;">Stay Informed</h2>
-      <p style="color: var(--text-muted); margin-bottom: 40px;">Professional updates on my latest research and projects delivered directly to your inbox.</p>
+      <p style="color: var(--text-muted); margin-bottom: 40px;">Professional updates on my latest research and projects delivered directly to your inbox. No spam, just pure technical insights.</p>
       <form onsubmit="event.preventDefault(); alert('Subscribed!')" style="display: flex; gap: 10px;">
         <input type="email" placeholder="Email Address" style="flex: 1; padding: 16px; background: var(--bg-secondary); border: 1px solid var(--border-color); color: white; border-radius: 4px;">
         <button class="btn btn-primary" type="submit">Subscribe</button>
@@ -152,7 +161,7 @@
       <div class="footer-inner">
         <div class="footer-brand">
           <div class="footer-logo">PERSPECTIVES</div>
-          <p class="footer-desc">Professional insights and research documentation by Lokesh Kondrugonti.</p>
+          <p class="footer-desc">Professional insights and research documentation by Lokesh Kondrugonti. Data Science Student at JBIET.</p>
         </div>
         <div class="footer-nav">
           <div>
@@ -180,48 +189,96 @@
     </div>
   </footer>
 
-  <!-- ====== MODALS (Simplified for the demonstration) ====== -->
+  <!-- ====== MODALS ====== -->
+  
+  <!-- Article 1: AI Verse -->
   <div class="modal-overlay" id="modal-aiverse">
     <div class="modal-box">
       <button class="modal-close" onclick="closeModal('aiverse')">&times;</button>
       <div class="modal-header">
-        <div class="modal-meta">AI & Web Development</div>
+        <div class="modal-meta">Project Case Study · June 2026</div>
         <h2 class="modal-title">Building AI Verse: From Idea to Reality</h2>
       </div>
       <div class="modal-body">
-        <p>I started AI Verse to learn web development and build a strong portfolio project. I wanted to create my own ChatGPT-like AI assistant that other people could use.</p>
-        <p>My first goal was getting the AI chat feature working. I faced many challenges including UI design, AI integration, authentication, and deployment.</p>
-        <h2>The Technical Journey</h2>
-        <p>Through AI Verse, I learned problem-solving, web development, and AI application development. I am most proud of successfully building the chat feature and deploying the project online.</p>
-        <p>My future goal is to turn AI Verse into a platform for students, productivity, and everyday AI assistance.</p>
+        <p>Building <strong>AI Verse</strong> wasn't just about writing code; it was about the journey of learning how to build something substantial from the ground up. I started this project with a very clear goal in mind: I wanted to bridge the gap between theoretical Data Science and real-world web applications.</p>
+        
+        <h2>The Motivation</h2>
+        <p>I started AI Verse to learn web development and build a strong portfolio project. At the time, I was fascinated by Large Language Models, but I felt like a passive consumer. I wanted to create my own ChatGPT-like AI assistant — something that wasn't just a toy, but a tool other people could actually use and benefit from.</p>
+        
+        <div class="highlight-box">
+          "My first goal was getting the AI chat feature working. Without the core logic, everything else was just window dressing."
+        </div>
+
+        <h2>Facing the Hurdles</h2>
+        <p>The journey was far from easy. As a Data Science student, I was comfortable with data, but the "web" side of things was entirely new. I faced significant challenges in:
+        <ul>
+          <li><strong>UI Design:</strong> Creating a modern, professional interface that didn't look like a basic template.</li>
+          <li><strong>AI Integration:</strong> Handling streaming responses and managing conversational context through APIs.</li>
+          <li><strong>Authentication:</strong> Implementing secure user sessions so people could save their chat histories.</li>
+          <li><strong>Deployment:</strong> Getting the code off my machine and onto the cloud for the world to see.</li>
+          <li><strong>Debugging:</strong> Spent countless nights tracing elusive bugs in the application state.</li>
+        </ul>
+
+        <h2>Reflections and Growth</h2>
+        <p>Through AI Verse, I learned more than just syntax. I learned problem-solving, the intricacies of web development, and the reality of AI application development. It forced me to think about user experience, performance, and scalability.</p>
+        
+        <p>I am most proud of successfully building the AI chat feature, creating the user interface entirely by myself, and successfully deploying the project online. Seeing the application live and accessible was an incredibly rewarding moment.</p>
+        
+        <h2>Looking Ahead</h2>
+        <p>This is only the beginning. My future goal is to turn AI Verse into a platform for students, aiding in productivity and providing everyday AI assistance. I want to build a tool that makes the world of Artificial Intelligence more accessible to everyone.</p>
       </div>
     </div>
   </div>
 
+  <!-- Article 2: Data Science -->
   <div class="modal-overlay" id="modal-datasci">
     <div class="modal-box">
       <button class="modal-close" onclick="closeModal('datasci')">&times;</button>
       <div class="modal-header">
-        <div class="modal-meta">Career & Education</div>
+        <div class="modal-meta">Career Reflection · June 2026</div>
         <h2 class="modal-title">Why I Chose Data Science</h2>
       </div>
       <div class="modal-body">
-        <p>Data Science represents the perfect intersection of mathematics, computer science, and real-world impact. My interest in Artificial Intelligence and learning experiences at JBIET guided this choice.</p>
-        <p>I am passionate about how data can be transformed into actionable insights and how AI can solve complex human problems.</p>
+        <p>The decision to pursue Data Science was driven by a deep curiosity about how we can extract meaning from the chaos of raw information. At JBIET, I discovered that the most interesting problems today aren't just technical — they're data-driven.</p>
+        
+        <h2>The Spark</h2>
+        <p>My interest in Data Science evolved from a fascination with Artificial Intelligence. I realized that AI isn't just about "robots"; it's about the data that fuels them. Learning how to clean, analyze, and model data felt like gaining a superpower to predict trends and understand behaviors.</p>
+        
+        <div class="highlight-box">
+          "Data Science is where math meets mystery. It's the art of finding patterns that others miss."
+        </div>
+
+        <h2>Learning Experiences</h2>
+        <p>Throughout my studies, I've had the chance to work on projects that range from simple regressions to complex neural networks. Each project taught me that Data Science is as much about asking the right questions as it is about finding the right answers. It requires a blend of technical skill, domain knowledge, and creative thinking.</p>
+        
+        <h2>Future Career Goals</h2>
+        <p>As I look toward my future career, my goal is to work at the forefront of AI research and application. I want to build systems that aren't just smart, but ethical and helpful. My experience at JBIET has laid the foundation for me to contribute meaningfully to the rapidly evolving AI landscape.</p>
       </div>
     </div>
   </div>
 
+  <!-- Article 3: GenAI -->
   <div class="modal-overlay" id="modal-genai">
     <div class="modal-box">
       <button class="modal-close" onclick="closeModal('genai')">&times;</button>
       <div class="modal-header">
-        <div class="modal-meta">Industry Trends</div>
+        <div class="modal-meta">Tech Outlook · June 2026</div>
         <h2 class="modal-title">The Future of Generative AI</h2>
       </div>
       <div class="modal-body">
-        <p>Generative AI is not just a trend; it's a paradigm shift. It is changing industries and creating massive opportunities for students to build and innovate.</p>
-        <p>From healthcare to software engineering, GenAI is augmenting human capability and redefining productivity.</p>
+        <p>We are currently living through one of the most significant shifts in technological history. Generative AI is no longer a futuristic concept; it is a fundamental tool that is redefining how we create, think, and solve problems.</p>
+        
+        <h2>Changing Industries</h2>
+        <p>From healthcare and finance to the arts, Generative AI is augmenting human capability. It's automating the mundane and allowing us to focus on higher-level creative tasks. In 2026, we're seeing AI assistants that aren't just answering questions, but collaborating on projects and helping us discover new ideas.</p>
+
+        <div class="highlight-box">
+          "The biggest opportunity for students in 2026 is learning how to collaborate with AI, not just compete with it."
+        </div>
+
+        <h2>Opportunities for Students</h2>
+        <p>For students, especially those in Data Science and Computer Science, this is a golden age. The barriers to entry for building intelligent systems have dropped, while the potential for impact has skyrocketed. We now have the tools to build and deploy sophisticated AI models in a matter of hours.</p>
+        
+        <p>The future belongs to those who can master these tools and apply them to solve the world's most pressing challenges. Whether it's climate change, healthcare access, or personalized education, Generative AI will be the catalyst for the next generation of solutions.</p>
       </div>
     </div>
   </div>
