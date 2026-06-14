@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Lokesh Kondrugonti's technology blog — Deep dives into AI and Data Science. Professional insights from JBIET." />
+  <title>Lokesh Kondrugonti | Perspectives on AI & Data Science</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ====== NAVIGATION ====== -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <div class="nav-inner">
+        <a href="#home" class="nav-logo">
+          <span class="logo-icon">LK</span>
+          <span>PERSPECTIVES</span>
+        </a>
+
+        <ul class="nav-links">
+          <li><a href="#home" class="active">Journal</a></li>
+          <li><a href="#posts">Articles</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#newsletter">Subscribe</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ====== HERO ====== -->
+  <section class="hero" id="home">
+    <div class="container">
+      <div class="hero-content">
+        <div class="section-label">Volume I / 2026</div>
+        <h1 class="hero-title">
+          Exploring the <span class="gradient-text">Future of Intelligence.</span>
+        </h1>
+        <p class="hero-subtitle">
+          A personal collection of research, projects, and philosophical inquiries into Artificial Intelligence and Data Science. Written by <strong>Lokesh Kondrugonti</strong>, Data Science Student at JBIET.
+        </p>
+        <div class="hero-actions">
+          <a href="#posts" class="btn btn-primary">Begin Reading</a>
+          <a href="#about" class="btn btn-secondary">The Author</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== FEATURED ARTCILE ====== -->
+  <section class="section" id="featured">
+    <div class="container">
+      <div class="featured-post">
+        <div class="featured-visual">
+          <div class="featured-visual-box">
+            <div class="ai-visual">
+              <div class="ai-core">🤖</div>
+            </div>
+          </div>
+        </div>
+        <div class="featured-content">
+          <div class="section-label">Featured Article</div>
+          <h2 class="featured-title">Building AI Verse: From Idea to Reality</h2>
+          <p class="featured-excerpt">
+            A first-person journey documenting the technical and creative hurdles of developing a custom AI-powered chat architecture. Exploring the transition from conceptualization to a fully deployed platform.
+          </p>
+          <button class="btn btn-secondary" onclick="openModal('aiverse')">Read Full Narrative</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== ARTICLES GRID ====== -->
+  <section class="section" id="posts">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">All Publications</div>
+        <h2 class="section-title">Latest Articles</h2>
+      </div>
+
+      <div class="blog-grid">
+        <!-- Article 1 -->
+        <article class="blog-card" onclick="openModal('aiverse')">
+          <div class="card-visual">🤖</div>
+          <h3 class="card-title">Building AI Verse: A Journey in Development</h3>
+          <p class="card-excerpt">How I started AI Verse to merge web development with AI, facing UI and integration challenges along the way.</p>
+          <div class="card-footer">
+            <span class="author-name">Lokesh K.</span>
+            <span class="author-date">June 2026</span>
+          </div>
+        </article>
+
+        <!-- Article 2 -->
+        <article class="blog-card" onclick="openModal('datasci')">
+          <div class="card-visual">📊</div>
+          <h3 class="card-title">The Choice: Why Data Science?</h3>
+          <p class="card-excerpt">Reflecting on the motivations and career goals that led me to the field of Data Science and AI.</p>
+          <div class="card-footer">
+            <span class="author-name">Lokesh K.</span>
+            <span class="author-date">June 2026</span>
+          </div>
+        </article>
+
+        <!-- Article 3 -->
+        <article class="blog-card" onclick="openModal('genai')">
+          <div class="card-visual">✨</div>
+          <h3 class="card-title">The Paradigm Shift: Future of GenAI</h3>
+          <p class="card-excerpt">A look into how Generative AI is reshaping industries and creating new frontiers for students.</p>
+          <div class="card-footer">
+            <span class="author-name">Lokesh K.</span>
+            <span class="author-date">June 2026</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== ABOUT ====== -->
+  <section class="section about-section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-avatar">LK</div>
+        <div class="about-content">
+          <div class="section-label">The Author</div>
+          <h2 class="about-name">Lokesh Kondrugonti</h2>
+          <span class="about-role">Data Science Student · JBIET</span>
+          <p class="about-bio">
+            I am a dedicated student at J.B. Institute of Engineering and Technology, specializing in Data Science. My work focuses on bridging the gap between theoretical data models and practical AI applications. Through this blog, I aim to share the technical nuances and personal milestones of my journey in the AI landscape.
+          </p>
+          <a href="#newsletter" class="btn btn-primary">Get in Touch</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== NEWSLETTER ====== -->
+  <section class="section" id="newsletter">
+    <div class="container" style="text-align: center; max-width: 600px;">
+      <div class="section-label">Newsletter</div>
+      <h2 class="section-title" style="margin-bottom: 24px;">Stay Informed</h2>
+      <p style="color: var(--text-muted); margin-bottom: 40px;">Professional updates on my latest research and projects delivered directly to your inbox.</p>
+      <form onsubmit="event.preventDefault(); alert('Subscribed!')" style="display: flex; gap: 10px;">
+        <input type="email" placeholder="Email Address" style="flex: 1; padding: 16px; background: var(--bg-secondary); border: 1px solid var(--border-color); color: white; border-radius: 4px;">
+        <button class="btn btn-primary" type="submit">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ====== FOOTER ====== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <div class="footer-logo">PERSPECTIVES</div>
+          <p class="footer-desc">Professional insights and research documentation by Lokesh Kondrugonti.</p>
+        </div>
+        <div class="footer-nav">
+          <div>
+            <div class="footer-group-title">Journal</div>
+            <ul class="footer-links">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#posts">Articles</a></li>
+              <li><a href="#about">About</a></li>
+            </ul>
+          </div>
+          <div>
+             <div class="footer-group-title">Social</div>
+             <ul class="footer-links">
+               <li><a href="#">LinkedIn</a></li>
+               <li><a href="#">GitHub</a></li>
+               <li><a href="#">Twitter</a></li>
+             </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Lokesh Kondrugonti. All Rights Reserved.</p>
+        <p>J.B. Institute of Engineering and Technology</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ====== MODALS (Simplified for the demonstration) ====== -->
+  <div class="modal-overlay" id="modal-aiverse">
+    <div class="modal-box">
+      <button class="modal-close" onclick="closeModal('aiverse')">&times;</button>
+      <div class="modal-header">
+        <div class="modal-meta">AI & Web Development</div>
+        <h2 class="modal-title">Building AI Verse: From Idea to Reality</h2>
+      </div>
+      <div class="modal-body">
+        <p>I started AI Verse to learn web development and build a strong portfolio project. I wanted to create my own ChatGPT-like AI assistant that other people could use.</p>
+        <p>My first goal was getting the AI chat feature working. I faced many challenges including UI design, AI integration, authentication, and deployment.</p>
+        <h2>The Technical Journey</h2>
+        <p>Through AI Verse, I learned problem-solving, web development, and AI application development. I am most proud of successfully building the chat feature and deploying the project online.</p>
+        <p>My future goal is to turn AI Verse into a platform for students, productivity, and everyday AI assistance.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="modal-datasci">
+    <div class="modal-box">
+      <button class="modal-close" onclick="closeModal('datasci')">&times;</button>
+      <div class="modal-header">
+        <div class="modal-meta">Career & Education</div>
+        <h2 class="modal-title">Why I Chose Data Science</h2>
+      </div>
+      <div class="modal-body">
+        <p>Data Science represents the perfect intersection of mathematics, computer science, and real-world impact. My interest in Artificial Intelligence and learning experiences at JBIET guided this choice.</p>
+        <p>I am passionate about how data can be transformed into actionable insights and how AI can solve complex human problems.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="modal-genai">
+    <div class="modal-box">
+      <button class="modal-close" onclick="closeModal('genai')">&times;</button>
+      <div class="modal-header">
+        <div class="modal-meta">Industry Trends</div>
+        <h2 class="modal-title">The Future of Generative AI</h2>
+      </div>
+      <div class="modal-body">
+        <p>Generative AI is not just a trend; it's a paradigm shift. It is changing industries and creating massive opportunities for students to build and innovate.</p>
+        <p>From healthcare to software engineering, GenAI is augmenting human capability and redefining productivity.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
